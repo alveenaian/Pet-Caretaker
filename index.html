@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet Simulator</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <h1>Buddy</h1>
+    <p class="type">Dog</p>
+
+    <div class="status">
+      <p id="hungryStatus">Hungry: true</p>
+
+      <div class="bar">
+        <div class="fill" id="energyFill"></div>
+      </div>
+
+      <p id="energyText">Energy: 50%</p>
+    </div>
+
+    <button onclick="pet.feed()">Feed</button>
+    <button onclick="pet.play()">Play</button>
+
+    <div class="log" id="log"></div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
